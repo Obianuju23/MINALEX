@@ -1,6 +1,95 @@
-PORTFOLIO PROJECT for ALX SE Africa
-O-Vet Care Web Application
-O-Vet Care as envisaged is an online Veterinary System that will be designed for pet owners to have a one-time system to give swift attention to their pets, online assistance to discuss concerns and as well give quick resolutions to pets’ disturbing issues as reported by the pet owners.
+WEBSTACK PORTFOLIO PROJECT for ALX SE Africa
+MINALEX Todo Flask Web Application
+
+
+# Todo Flask App
+
+![Todo App Logo](https://github.com/Obianuju23/MINALEX/blob/main/shots/homepage.PNG?raw=true)
+
+## Overview
+
+The Todo Flask App is a powerful task management tool designed to streamline your daily activities and enhance productivity. It provides a convenient, one-stop solution for users to organize tasks, discuss concerns, and find quick resolutions to their pending to-do items.
+
+## Key Features
+
+- **Efficient Task Management:** Seamlessly organize and prioritize your tasks for enhanced productivity.
+- **Collaborative Environment:** Foster collaboration by discussing tasks and sharing updates with team members.
+- **Swift Resolutions:** Quickly resolve pending issues and tasks to stay on top of your commitments.
+- **User-Friendly Interface:** Intuitive design for a seamless and enjoyable task management experience.
+
+## How It Works
+
+1. **Task Creation:**
+   Easily create and manage tasks with just a few clicks.
+
+2. **Discussion Forum:**
+   Engage in discussions with team members to get insights and updates on tasks.
+
+3. **Prioritization:**
+   Prioritize tasks based on urgency and importance.
+
+4. **Task Completion:**
+   Mark tasks as complete when they are done.
+
+## Getting Started
+
+1. **Installation:**
+   Clone the repository and install dependencies.
+
+   ```bash
+   git clone https://github.com/your-username/todo-flask-app.git
+   cd todo-flask-app
+   pip install -r requirements.txt
+# Todo Flask App
+
+![Todo App Logo](logo.png)
+
+## Overview
+
+The Todo Flask App is a powerful task management tool designed to streamline your daily activities and enhance productivity. It provides a convenient, one-stop solution for users to organize tasks, discuss concerns, and find quick resolutions to their pending to-do items.
+
+## Key Features
+
+- **Efficient Task Management:** Seamlessly organize and prioritize your tasks for enhanced productivity.
+- **Collaborative Environment:** Foster collaboration by discussing tasks and sharing updates with team members.
+- **Swift Resolutions:** Quickly resolve pending issues and tasks to stay on top of your commitments.
+- **User-Friendly Interface:** Intuitive design for a seamless and enjoyable task management experience.
+
+## How It Works
+
+1. **Task Creation:**
+   Easily create and manage tasks with just a few clicks.
+
+2. **Discussion Forum:**
+   Engage in discussions with team members to get insights and updates on tasks.
+
+3. **Prioritization:**
+   Prioritize tasks based on urgency and importance.
+
+4. **Task Completion:**
+   Mark tasks as complete when they are done.
+
+## Getting Started
+
+1. **Installation:**
+   Clone the repository and install dependencies.
+
+   ```bash
+   git clone https://github.com/your-username/todo-flask-app.git
+   cd todo-flask-app
+   pip install -r requirements.txt
+
+
+
+
+
+
+
+
+
+
+
+ as envisaged is an online Veterinary System that will be designed for pet owners to have a one-time system to give swift attention to their pets, online assistance to discuss concerns and as well give quick resolutions to pets’ disturbing issues as reported by the pet owners.
 
 From this project, users can get a feel of what the web application is all about by having a "Logged Out Experience" and the routes that can be assessed by the user or customer includes:
 
