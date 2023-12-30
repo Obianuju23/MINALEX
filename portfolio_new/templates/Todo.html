@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+{% block title %}
+Add New Todo
+{% endblock %}
+{% block content %}
+    <form action="{{ url_for('addrec') }}" method="POST">
+        <h3>Please Add the New Todo Information:</h3>
+        Task Name<br>
+        <input type="text" name="task_name" /><br>
+
+        Description<br>
+        <textarea name="description"></textarea><br>
+
+        Due Date<br>
+        <input type="text" name="due_date" /><br>
+
+        Priority<br>
+        <input type="text" name="priority" /><br>
+
+        Status<br>
+        <input type="text" name="status" /><br>
+
+        Category<br>
+        <input type="text" name="category" /><br>
+
+        Creation Date<br>
+        <input type="text" name="creation_date" /><br>
+
+        Completion Date<br>
+        <input type="text" name="completion_date" /><br>
+
+        Assigned To<br>
+        <input type="text" name="assigned_to" /><br>
+
+        <input type="submit" value="Submit" /><br>
+    </form>
+{% endblock %}

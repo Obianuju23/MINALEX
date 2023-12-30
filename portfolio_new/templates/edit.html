@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block title %}
+Edit Todo
+{% endblock %}
+{% block content %}
+    <h1>Edit Todo Record</h1>
+    {% for row in rows %}
+    <form action="{{ url_for('editrec') }}" method="POST">
+        <h3 style="color: blue">Task ID: {{ row['rowid'] }}</h3>
+        <input type="hidden" name="rowid" value="{{ row['rowid'] }}">
+        
+        Task Name<br>
+        <input type="text" name="new_task_name" value="{{ row['task_name'] }}" /><br>
+        
+        Description<br>
+        <textarea name="new_description">{{ row['description'] }}</textarea><br>
+        
+        Due Date<br>
+        <input type="text" name="new_due_date" value="{{ row['due_date'] }}" /><br>
+        
+        Priority<br>
+        <input type="text" name="new_priority" value="{{ row['priority'] }}" /><br>
+        
+        Status<br>
+        <input type="text" name="new_status" value="{{ row['status'] }}" /><br>
+        
+        Category<br>
+        <input type="text" name="new_category" value="{{ row['category'] }}" /><br>
+        
+        Creation Date<br>
+        <input type="text" name="new_creation_date" value="{{ row['creation_date'] }}" /><br>
+        
+        Completion Date<br>
+        <input type="text" name="new_completion_date" value="{{ row['completion_date'] }}" /><br>
+        
+        Assigned To<br>
+        <input type="text" name="new_assigned_to" value="{{ row['assigned_to'] }}" /><br>
+        
+        <input type="submit" value="Submit" /><br>
+    </form>
+    {% endfor %}
+{% endblock %}
