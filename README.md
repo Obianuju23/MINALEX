@@ -142,7 +142,5 @@ Press CTRL+C to quit
 
 Christiana Aghara - [GitHub](https://github.com/Obianuju23) / [Gmail](mailto:obianujunmoh@gmail.com)
 
-Christiana Aghara - github / Gmail
-
 License
 Public Domain. No copy write protection
