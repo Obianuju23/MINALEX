@@ -48,19 +48,19 @@ From this project, users can get a feel of what the web application is all about
 Some of the tools used for software development of this app are:
 
  
-- **Flask: A web framework for Python that simplifies the development of web applications.
+- Flask: A web framework for Python that simplifies the development of web applications.
 
-- **SQLite3 Module: A built-in Python module providing an interface to SQLite databases.
+- SQLite3 Module: A built-in Python module providing an interface to SQLite databases.
 
-- **HTML: HyperText Markup Language, used for structuring and presenting content on the web.
+- HTML: HyperText Markup Language, used for structuring and presenting content on the web.
 
-- **CSS: Cascading Style Sheets, used for styling and layout of web pages.
+- CSS: Cascading Style Sheets, used for styling and layout of web pages.
 
-- **Jinja: Jinja2, a template engine for Python, commonly used with Flask to generate dynamic content.
+- Jinja: Jinja2, a template engine for Python, commonly used with Flask to generate dynamic content.
 
-- **SQLite Team Viewer: A tool for viewing and managing SQLite databases.
+- SQLite Team Viewer: A tool for viewing and managing SQLite databases.
 
-- **DataGrip App: An integrated development environment (IDE) for working with databases, including SQLite.
+- DataGrip App: An integrated development environment (IDE) for working with databases, including SQLite.
 
 
 ## Getting Started
@@ -96,18 +96,17 @@ portfolio\Scripts\activate.bat
 We have saved the dependencies in a file named requirement.txt
 
 (portfolio) /home/nerd $ pip freeze > requirements.txt
-
-blinker==1.7.0
-click==8.1.7
-flask==3.0.0
-greenlet==3.0.2
-importlib-metadata==7.0.0
-itsdangerous==2.1.2
-Jinja2==3.1.2
-MarkupSafe==2.1.3
-typing-extensions==4.9.0
-werkzeug==3.0.1
-zipp==3.17.0
+- blinker==1.7.0
+- click==8.1.7
+- flask==3.0.0
+- greenlet==3.0.2
+- importlib-metadata==7.0.0
+- itsdangerous==2.1.2
+- Jinja2==3.1.2
+- MarkupSafe==2.1.3
+- typing-extensions==4.9.0
+- werkzeug==3.0.1
+- zipp==3.17.0
 
 ## INSTALL DEPENDENCIES
 (portfolio) /home/nerd $ pip install -r requirements.txt
