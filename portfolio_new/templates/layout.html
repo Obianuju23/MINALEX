@@ -5,21 +5,27 @@
     <title>{% block title %}{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='site.css')}}" />
     <style>
-        .footer {
-            text-align: right;
+
+	.footer {
+            text-align: center;
+            margin-top: 20px;
         }
 
         .footer img {
-            margin-left: 10px; 
-        }
+            margin-bottom: 10px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }	
+
     </style>
 </head>
 
 <body>
     <div class="navbar">
         <a href="{{ url_for('home') }}" class="navbar-brand">Home</a>
-        <a href="{{ url_for('enternew') }}" class="navbar-item">Add New Student</a>
-        <a href="{{ url_for('list') }}" class="navbar-item">Review and Edit Students</a>
+        <a href="{{ url_for('enternew') }}" class="navbar-item">Add New Task</a>
+        <a href="{{ url_for('list') }}" class="navbar-item">Review and Edit Task</a>
     </div>
 
     <div class="body-content">
@@ -32,4 +38,3 @@
     </div>
 </body>
 </html>
-
