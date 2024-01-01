@@ -11,19 +11,19 @@ The Todo Flask App is a powerful task management tool designed to streamline you
 
 From this project, users can get a feel of what the web application is all about by having a "Logged Out Experience" and the routes that can be assessed by the user or customer includes:
 
-- **The landing page
-- **The Add new task tab
-- **The Review and edit task tab
+- The landing page
+- The Add new task tab
+- The Review and edit task tab
 
 ## Key Features
 
-- **Efficient Task Management:** Seamlessly organize and prioritize your tasks for enhanced productivity.
-- **Collaborative Environment:** Foster collaboration by discussing tasks and sharing updates with team members.
-- **Swift Resolutions:** Quickly resolve pending issues and tasks to stay on top of your commitments.
-- **User-Friendly Interface:** Intuitive design for a seamless and enjoyable task management experience.
-- **Performs CRUD Operations:** Add new tasks,Read/list all tasks, update task details, and mark tasks as complete and can delete tasks.
-- **Prioritization:** Prioritize tasks by choosing between high, medium and low in that section.
-- **Persistence:** Your tasks are stored persistently, so you can access them across sessions and ensure to meet up with the due dates.
+- Efficient Task Management:** Seamlessly organize and prioritize your tasks for enhanced productivity.
+- Collaborative Environment:** Foster collaboration by discussing tasks and sharing updates with team members.
+- Swift Resolutions:** Quickly resolve pending issues and tasks to stay on top of your commitments.
+- User-Friendly Interface:** Intuitive design for a seamless and enjoyable task management experience.
+- Performs CRUD Operations:** Add new tasks,Read/list all tasks, update task details, and mark tasks as complete and can delete tasks.
+- Prioritization:** Prioritize tasks by choosing between high, medium and low in that section.
+- Persistence:** Your tasks are stored persistently, so you can access them across sessions and ensure to meet up with the due dates.
 
 
 ## How It Works
