@@ -11,9 +11,9 @@ The Todo Flask App is a powerful task management tool designed to streamline you
 
 From this project, users can get a feel of what the web application is all about by having a "Logged Out Experience" and the routes that can be assessed by the user or customer includes:
 
-The landing page
-The Add new task tab
-The Review and edit task tab
+- **The landing page
+- **The Add new task tab
+- **The Review and edit task tab
 
 ## Key Features
 
