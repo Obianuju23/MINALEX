@@ -138,9 +138,11 @@ Press CTRL+C to quit
  * Debugger is active!
  * Debugger PIN: 659-121-357
 
-AUTHOR
+**AUTHOR**
 
-Christiana Aghara - Github / Gmail
+Christiana Aghara - [GitHub](https://github.com/Obianuju23) / [Gmail](mailto:obianujunmoh@gmail.com)
+
+Christiana Aghara - github / Gmail
 
 License
 Public Domain. No copy write protection
