@@ -71,19 +71,6 @@ def list():
     # Send the results of the SELECT to the list.html page
     return render_template("list.html",rows=rows)
 
-#@app.route('/todo', methods=['GET', 'POST'])
-#def todo():
- #   cursor = conn.cursor()
-#
- #   if request.method == 'GET':
-  #      cursor = conn.execute("SELECT * FROM todos")
-   #     tasks = [
-    #        dict(task_id=row[0],task_name=row[1], description=row[3], due_date=row[4], priority=row[5], status=row[6], category=row[7], creation_date=row[8], completion_date=row[9], assigned_to=row[10])
-     #       for row in cursor.fetchall()
-      #  ]
-       # if tasks is not None:
-        #    return jsonify(tasks)
-
 # Route that will SELECT a specific row in the database then load an Edit form 
 @app.route("/edit", methods=['POST', 'GET'])
 def edit():
