@@ -14,6 +14,7 @@ CORS(app)
 # Home Page route
 @app.route("/")
 def home():
+    """renders landing page"""
     return render_template("home.html")
 
 # Route to form used to add a new student to the database
