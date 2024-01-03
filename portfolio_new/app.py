@@ -2,12 +2,14 @@
 # Description: This is a Flask App that uses SQLite3 to
 # execute (C)reate, (R)ead, (U)pdate, (D)elete operations
 
-from flask import Flask, jsonify
+from flask import Flask
+from flask_cors import CORS
 from flask import render_template
 from flask import request
 import sqlite3
 
 app = Flask(__name__)
+CORS(app)
 
 # Home Page route
 @app.route("/")
