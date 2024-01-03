@@ -6,7 +6,7 @@ Edit Todo
     <h1>Edit Todo Record</h1>
     {% for row in rows %}
     <form action="{{ url_for('editrec') }}" method="POST">
-        <h3 style="color: blue">Task ID: {{ row['rowid'] }}</h3>
+        <h3 style="color: blue (238, 255, 0, 0.884)">Task ID: {{ row['rowid'] }}</h3>
         <input type="hidden" name="rowid" value="{{ row['rowid'] }}">
         
         Task Name<br>
