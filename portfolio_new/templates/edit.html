@@ -8,13 +8,79 @@ Edit Todo
     <form action="{{ url_for('editrec') }}" method="POST">
         <h3 style="color: blue (238, 255, 0, 0.884)">Task ID: {{ row['rowid'] }}</h3>
         <input type="hidden" name="rowid" value="{{ row['rowid'] }}">
-        
+
         Task Name<br>
         <input type="text" name="new_task_name" value="{{ row['task_name'] }}" /><br>
         
         Description<br>
         <textarea name="new_description">{{ row['description'] }}</textarea><br>
         
+        Due Date<br>
+        <input type="date" name="new_due_date" value="{{ row['due_date'] }}" /><br>
+        
+        Priority<br>
+        <select name="new_priority" id="new_priority">
+            <option value=""></option>
+            <option value="low" {% if row['priority'] == 'low' %}selected{% endif %}>Low</option>
+            <option value="medium" {% if row['priority'] == 'medium' %}selected{% endif %}>Medium</option>
+            <option value="high" {% if row['priority'] == 'high' %}selected{% endif %}>High</option>
+            <option value="urgent" {% if row['priority'] == 'urgent' %}selected{% endif %}>Urgent</option>
+            <option value="critical" {% if row['priority'] == 'critical' %}selected{% endif %}>Critical</option>
+            <option value="on hold" {% if row['priority'] == 'on hold' %}selected{% endif %}>On hold</option>
+            <option value="normal" {% if row['priority'] == 'normal' %}selected{% endif %}>Normal</option>
+            <option value="no priority" {% if row['priority'] == 'no priority' %}selected{% endif %}>No Priority</option>
+           
+           
+            <!-- Add other priority options here -->
+        </select><br>
+        
+        Status<br>
+        <select name="new_status" id="new_status">
+            <option value=""></option>
+            <option value="not started" {% if row['status'] == 'not started' %}selected{% endif %}>Not started</option>
+            <option value="in progress" {% if row['status'] == 'in progress' %}selected{% endif %}>In progress</option>
+            <option value="deffered" {% if row['status'] == 'deferred' %}selected{% endif %}>Deferred</option>
+            <option value="canceled" {% if row['status'] == 'canceled' %}selected{% endif %}>Canceled</option>
+            <option value="to do" {% if row['status'] == 'to do' %}selected{% endif %}>To Do</option>
+            <option value="in progress" {% if row['status'] == 'review' %}selected{% endif %}>Review</option>
+
+
+            <!-- Add other status options here -->
+        </select><br>
+        
+        Category<br>
+        <select name="new_category" id="new_category">
+            <option value=""></option>
+            <option value="work" {% if row['category'] == 'work' %}selected{% endif %}>Work</option>
+            <option value="personal" {% if row['category'] == 'personal' %}selected{% endif %}>Personal</option>
+            <option value="school" {% if row['category'] == 'school' %}selected{% endif %}>School</option>
+            <option value="meetings" {% if row['category'] == 'meetings' %}selected{% endif %}>Meetings</option>
+            <option value="health" {% if row['category'] == 'health' %}selected{% endif %}>Health</option>
+            <option value="errands" {% if row['category'] == 'errands' %}selected{% endif %}>Errands</option>
+            <option value="home" {% if row['category'] == 'home' %}selected{% endif %}>Home</option>
+            <option value="finance" {% if row['category'] == 'finance' %}selected{% endif %}>Finance</option>
+            <option value="social" {% if row['category'] == 'social' %}selected{% endif %}>Social</option>
+            
+            
+            <!-- Add other category options here -->
+        </select><br>
+        
+        Creation Date<br>
+        <input type="date" name="new_creation_date" value="{{ row['creation_date'] }}" /><br>
+        
+        Completion Date<br>
+        <input type="date" name="new_completion_date" value="{{ row['completion_date'] }}" /><br>
+        
+        Assigned To<br>
+        <input type="text" name="new_assigned_to" value="{{ row['assigned_to'] }}" /><br>
+        
+        
+        <!--Task Name<br>
+        <input type="text" name="new_task_name" value="{{ row['task_name'] }}" /><br>
+        
+        Description<br>
+        <textarea name="new_description">{{ row['description'] }}</textarea><br>
+
         Due Date<br>
         <input type="text" name="new_due_date" value="{{ row['due_date'] }}" /><br>
         
@@ -35,7 +101,7 @@ Edit Todo
         
         Assigned To<br>
         <input type="text" name="new_assigned_to" value="{{ row['assigned_to'] }}" /><br>
-        
+        -->   
         <input type="submit" value="Submit" /><br>
     </form>
     {% endfor %}
