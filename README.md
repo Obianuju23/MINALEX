@@ -3,7 +3,7 @@ WEBSTACK PORTFOLIO PROJECT for ALX SE Africa,2024
 
 # MINALEX Todo Flask App
 
-![Task Manager App Logo](https://github.com/Obianuju23/MINALEX/blob/main/shots/landingpage.PNG?raw=true)
+![Task Manager App Logo](https://github.com/Obianuju23/MINALEX/blob/main/web_dynamic/static/assets/img/webbrowser.png?raw=true)
 
 ## Overview new
 
