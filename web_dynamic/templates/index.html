@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<title>MINAlEX Task Management System</title>
+     
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="../static/assets/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../static/assets/css/owl.carousel.css">
+     <link rel="stylesheet" href="../static/assets/css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="../static/assets/css/font-awesome.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="../static/assets/css/tooplate-style.css">
+
+     <style>
+
+#home {
+          background-image: url('../static/assets/img/home-bg.jpg'); /* Replace with the path to your background image */
+          background-size: cover;
+          background-position: center;
+          background-attachment: fixed;
+          color: #fff; /* Set text color to white or a suitable color for better visibility on the background */
+     }
+
+
+          .oval-link {
+              display: inline-block;
+              padding: 10px 20px; /* Adjust padding as needed */
+              border-radius: 50px; /* This creates an oval shape */
+              border: 2px solid #3498db; /* Border color */
+              text-decoration: none;
+              color: #3498db; /* Text color */
+          }
+  
+          .oval-link:hover {
+              background-color: #3498db; /* Change background color on hover */
+              color: #fff; /* Change text color on hover */
+          }
+
+          .navbar-brand {
+            float: left; /* Move the logo to the left */
+            margin-right: 10px; /* Add right margin for separation if needed */
+        }
+
+          .img-weblogo {
+            display: inline-block; /* Change display to block */
+            vertical-align: left;
+            margin-left: 50px
+        }
+          .home-info {
+            text-align: center; /* Center the content within the column */
+            margin-top: 50px; 
+        }
+
+          .online-form {
+            margin-top: 10px; /* Adjust the top margin for the form */
+        }
+
+
+          
+     </style>
+
+</head>
+<body>
+
+     <!-- PRE LOADER -->
+     <section class="preloader">
+          <div class="spinner">
+
+               <span class="spinner-rotate"></span>
+               
+          </div>
+     </section>
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+<!--                    <a href="index.html" class="navbar-brand">MINALEX Task Manager</a>-->
+                    <a href="{{ url_for('home') }}" class="navbar-brand">MINALEX Task Manager</a>
+
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                         <li><a href="#home" class="smoothScroll">Home</a></li>
+                         <li><a href="#about" class="smoothScroll">About us</a></li>
+                         <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                         <li><a href="{{ url_for('login') }}" class="oval-link">Get Started</a></li>
+                     </ul>
+
+
+               </div>
+
+          </div>
+     </section>
+
+
+     <!-- FEATURE -->
+     <section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="home-info">
+                              <div class="home-info">
+                                   <img src="../static/assets/img/logo1.png" class="img-weblogo" alt="Task book and pen">
+                               </div>
+                              <h3>Effective and Efficient Task Management system</h3>
+                              <h1>We can help you manage your tasks successfully!</h1>
+                              
+                              <form action="" method="get" class="online-form">
+<!--                                   <input type="email" name="email" class="form-control" placeholder="Enter your email" required="">-->
+<!--                                   // make this button redirect to the login page upon clikcin on it-->
+                                      <a href="{{ url_for('login') }}" class="btn btn-default">Get Started</a>
+                              </form>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- FEATURE -->
+     <section id="feature" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h1>What you get</h1>
+                         </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <ul class="nav nav-tabs" role="tablist">
+                              <li class="active"><a href="#tab01" aria-controls="tab01" role="tab" data-toggle="tab">Admin</a></li>
+
+                              <li><a href="#tab02" aria-controls="tab02" role="tab" data-toggle="tab">User</a></li>
+
+                              <li><a href="#tab03" aria-controls="tab03" role="tab" data-toggle="tab">Task</a></li>
+                         </ul>
+
+                         <div class="tab-content">
+                              <div class="tab-pane active" id="tab01" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <h2>ADMINISTRATIVE ROLE</h2>
+                                        <p>The admin perfoms CRUD (Create, Read, Update and Delete) operations on tasks</p>
+                                        <p>The admin sets task priority, category, due dates and assigns it to a team or an individual for effective delivery.</p>
+                                   </div>
+                                   <div class="tab-pane-item">
+                                        <h2>User-friendly</h2>
+                                        <p>The interface and features are in a simplified pattern for easy usage.</p>
+                                   </div>
+                              </div>
+
+
+                              <div class="tab-pane" id="tab02" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <h2>USER ROLE</h2>
+                                        <p>The user can only view task and update the admin with the status of the task </p>
+                                   </div>
+                                   <div class="tab-pane-item">
+                                        <h2>User Friendly</h2>
+                                        <p>The user need to always view to check for task updates and to know when a new task is assigned to the individual </p>
+                                   </div>
+                              </div>
+                                  
+                              <div class="tab-pane" id="tab03" role="tabpanel">
+                                   <div class="tab-pane-item">
+                                        <h2>Task</h2>
+                                        <p>The admin creates and manages task very well for effective and efficient delivery of tasks .</p>
+                                   </div>
+                                   <div class="tab-pane-item">
+                                        <h2>Manage Tasks</h2>
+                                        <p>The admin would go through all the available task then organize and prioritise them to achieve set goals </p>
+                                   </div>
+                              </div>
+                         </div>
+
+                    </div>
+
+                    <div class="col-md-6 col-sm-6">
+                         <div class="feature-image">
+                              <img src="../static/assets/img/m.jpg" class="img-responsive" alt="Thin Laptop">
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+
+     <!-- ABOUT -->
+     <section id="about" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-3 col-md-6 col-sm-12">
+                         <div class="section-title">
+                              <h1>Welcome to MINALEX App!</h1>
+                              <small style="font-size: 16px;">Stay organized and boost your productivity with our easy-to-use task manager. Whether you're managing personal tasks, work projects, or team collaboration, our app have you covered.</small>
+                              <h1>Meet our Professional Team</h1>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb">
+                              <img src="../static/assets/img/team-image1.jpg" class="img-responsive" alt="Andrew Orange">
+                              <div class="team-info team-thumb-up">
+                                   <h2>Yusuf Abdulwasiu</h2>
+                                   <small>Backend developer</small>
+                                   <p>Handles the database and base code of the app</p>
+                              </div>
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb">
+                              <div class="team-info team-thumb-down">
+                                   <h2>Maryjane</h2>
+                                   <small>Chief Executive Officer</small>
+                                   <p>Founder of MINALEX Task Management System(FULL STACK DEVELOPER)</p>
+                              </div>
+                              <img src="../static/assets/img/team-image2.jpg" class="img-responsive" alt="Catherine Soft">
+                         </div>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="team-thumb">
+                              <img src="../static/assets/img/team-image3.jpg" class="img-responsive" alt="Jack Wilson">
+                              <div class="team-info team-thumb-up">
+                                   <h2>Alexander Michelle</h2>
+                                   <small>Frontend developer</small>
+                                   <p>Designs and handles the app features and functionalities</p>
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <!-- TESTIMONIAL -->
+     <section id="testimonial" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="testimonial-image"></div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-10">
+                         <div class="testimonial-info">
+                              
+                              <div class="section-title">
+                                   <h1>What People Say</h1>
+                              </div>
+
+                              <div class="owl-carousel owl-theme">
+                                   <div class="item">
+                                        <h3>"MINALEX stands out amongst several task management tools with its simplicity and powerful functionality. The ability to customize task categories and set priorities has significantly improved my productivity. ".</h3>
+                                        <div class="testimonial-item">
+                                             <img src="../static/assets/img/tst-image1.jpg" class="img-responsive" alt="Michael">
+                                             <h4>Michael</h4>
+                                        </div>
+                                   </div>
+
+                                   <div class="item">
+                                        <h3>"The user-friendly interface and intuitive features of MINALEX Task Manager have made task organization a breeze and transformed the way I handle my daily tasks."</h3>
+                                        <div class="testimonial-item">
+                                             <img src="../static/assets/img/tst-image2.jpg" class="img-responsive" alt="Sofia">
+                                             <h4>Sofia</h4>
+                                        </div>
+                                   </div>
+
+                                   <div class="item">
+                                        <h3>As a busy professional, finding a task management system that seamlessly integrates into my workflow was crucial. MINALEX exceeded my expectations.</h3>
+                                        <div class="testimonial-item">
+                                             <img src="../static/assets/img/tst-image3.jpg" class="img-responsive" alt="Monica">
+                                             <h4>Monica</h4>
+                                        </div>
+                                   </div>
+                              </div>
+
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <!-- CONTACT -->
+     <section id="contact" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-offset-1 col-md-10 col-sm-12">
+                         <form id="contact-form" role="form" action="" method="post">
+                              <div class="section-title">
+                                   <h1>Say hello to us</h1>
+                              </div>
+
+                              <div class="col-md-4 col-sm-4">
+                                   <input type="text" class="form-control" placeholder="Full name" name="name" required="">
+                              </div>
+                              <div class="col-md-4 col-sm-4">
+                                   <input type="email" class="form-control" placeholder="Email address" name="email" required="">
+                              </div>
+                              <div class="col-md-4 col-sm-4">
+                                   <input type="submit" class="form-control" name="send message" value="Send Message">
+                              </div>
+                              <div class="col-md-12 col-sm-12">
+                                   <textarea class="form-control" rows="8" placeholder="Your message" name="message" required=""></textarea>
+                              </div>
+                         </form>
+                    </div>
+
+               </div>
+          </div>
+     </section>       
+
+
+     <!-- FOOTER -->
+     <footer id="footer" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="copyright-text col-md-12 col-sm-12">
+                         <div class="col-md-6 col-sm-6">
+                              <p>Copyright &copy; 2024 | Designed by: MINALEX
+                				<a rel="nofollow" href="http://tooplate.com">Tooplate</a></p>
+                         </div>
+
+                         <div class="col-md-6 col-sm-6">
+                              <ul class="social-icon">
+                                   <li><a href="#" class="fa fa-facebook-square" attr="facebook icon"></a></li>
+                                   <li><a href="#" class="fa fa-twitter"></a></li>
+                                   <li><a href="#" class="fa fa-instagram"></a></li>
+                              </ul>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="../static/assets/js/jquery.js"></script>
+     <script src="../static/assets/js/bootstrap.min.js"></script>
+     <script src="../static/assets/js/jquery.stellar.min.js"></script>
+     <script src="../static/assets/js/owl.carousel.min.js"></script>
+     <script src="../static/assets/js/smoothscroll.js"></script>
+     <script src="../static/assets/js/custom.js"></script>
+
+
+</body>
+</html>
